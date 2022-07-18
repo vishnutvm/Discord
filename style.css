@@ -1,0 +1,532 @@
+/* fonts */
+@font-face {
+    font-family: 'Ginto Nord';
+    src: url(source/fonts/Ginto-Nord-700.woff);
+}
+@font-face {
+    font-family: 'Ginto Normal';
+    src: url(source/fonts/Ginto-700.woff);
+}
+@font-face {
+    font-family: 'Whitney';
+    src: url(source/fonts/Whitney-600.woff);
+    font-weight: 600;
+}
+@font-face {
+    font-family: 'Whiteny';
+    src: url(source/fonts/Whitney-400.woff);
+    font-weight: 400;
+}
+@font-face {
+    font-family: 'Whiteny';
+    src: url(source/fonts/Whitney-500.woff);
+    font-weight: 500;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* presets start */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+img {
+    width: 100%;
+    display: block;
+
+}
+
+body {
+    font-family: "Whitney", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: white;
+    background-color: #f6f6f6;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-family: 'Whitney';
+    font-weight: 600;
+}
+a:hover{
+    text-decoration: underline ;
+}
+
+ul {
+    list-style-type: none;
+}
+
+/* presets end */
+
+
+
+
+
+
+.hero {
+    width: 100%;
+    min-height: 86.8vh;
+    background: url("source/backgroud-img.jpg");
+    background-size: cover;
+    position: relative;
+
+}
+
+/* navbar starts */
+.navbar {
+    width: 1180px;
+    height: 80px;
+    display: flex;
+    margin: auto;
+    align-items: center;
+}
+
+.discord {
+    width: 123px;
+}
+
+.navbar .menu {
+    width: 79%;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar .menu ul {
+    display: flex;
+    column-gap: 40px;
+}
+
+.navbar .menu ul li a {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.navbar .login {
+    width: 10.5%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.navbar .login .login-button {
+    width: 64px;
+    height: 38px;
+    border-radius: 40px;
+    background-color: #ffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.2s box-shadow ease-in;
+
+
+}
+.navbar .login .login-button:hover{
+    box-shadow: 0 8px 15px rgb(0 0 0 / 20%);
+    
+}
+.navbar .login .login-button:hover > a{
+color:#404eed;
+text-decoration: none;
+}
+.navbar .login .login-button a {
+    font-size: 14px;
+    color: black;
+   font-family: 'Whiteny';
+   font-weight: 500;
+    transition: 0.2s color ease-in;
+    
+}
+.navbar .login .login-button a :hover{
+    color: #404eed;
+    text-decoration: none;
+}
+/* navbar ends */
+
+
+
+
+/* hero section starts */
+.hero-content {
+    width: 780px;
+    margin: auto;
+    position: absolute;
+    left: 50%;
+    top: 53%;
+    transform: translate(-50%, -50%);
+
+}
+
+.hero-content .hero-text h1 {
+    font-weight: 800;
+    font-size: 56px;
+    text-align: center;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    font-family:  'Ginto Nord';
+}
+
+.hero-content .hero-text p {
+    font-size: 20px;
+    font-family: 'Whiteny';
+    font-weight: 400;
+    line-height: 33px;
+    text-align: center;
+}
+
+.hero-content .hero-btns {
+    display: flex;
+    justify-content: center;
+    column-gap: 24px;
+    margin-top: 24px;
+}
+
+.btn {
+    padding: 16px 32px;
+    font-size: 20px;
+    border-radius: 28px;
+ 
+}
+
+.hero-content .hero-btns .windows_btn {
+    background-color: #ffff;
+    display: flex;
+}
+.hero-content .hero-btns .windows_btn:hover{
+    box-shadow: 0 8px 15px rgb(0 0 0 / 20%);
+
+}
+
+.download-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+    margin-top: 4px;
+}
+
+
+.hero-content .hero-btns .browser_btn {
+    background-color: #23272a;
+    transition: 0.2s box-shadow ease-in;
+    transition: 0.2s background-color ease-in;
+}
+
+.hero-content .hero-btns .windows_btn a {
+    color: #23272a;
+    font-family: 'Whiteny';
+    font-weight: 500;
+    transition: 0.2s color ease-in;
+}
+.hero-content .hero-btns .windows_btn:hover > a{
+    color: #5865f2;
+    text-decoration: none;
+    
+}
+
+.hero-content .hero-btns .browser_btn a {
+    color: #ffff;
+    font-family: 'Whiteny';
+    font-weight: 500;
+}
+.hero-content .hero-btns .browser_btn:hover{
+    background-color: #36393f;
+
+    box-shadow: 0 8px 15px rgb(0 0 0 / 20%);
+}
+.hero-content .hero-btns .browser_btn:hover > a{
+    text-decoration: none;
+    
+}
+
+
+
+
+/* hero section ends */
+.section {
+    height: 90vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 120px;
+
+}
+
+
+
+.section_p {
+    font-size: 20px;
+    line-height: 33px;
+    font-weight: 400;
+    color: #4f4a4a;
+    font-family: 'Whiteny';
+    font-weight: 400;
+
+}
+
+.section_h {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 58px;
+    color: #2a2323;
+    margin-bottom: 20px;
+    font-family: 'Ginto Normal';
+}
+
+.text_section {
+    width: 382px;
+    height: 440px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.img_section {
+    width: 678px;
+    height: 440px;
+}
+
+.section2,
+.section4 {
+    background-color: #ffff;
+}
+
+/* section 5 starting */
+
+.section5 {
+    width: 100%;
+    height: 1060px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+.section5 .image {
+    width: 1180px;
+    height: 716px;
+}
+
+.section5 .heading {
+    width: 980px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.section5 .heading h2 {
+    font-family: 'Ginto Nord';
+    font-weight: 700;
+    font-size: 40px;
+    text-transform: uppercase;
+    margin-bottom: 24px;
+    color: #23272a;
+}
+
+.section5 .heading p {
+    color: #23272a;
+    text-align: center;
+    font-size: 20px;
+    line-height: 33px;
+    font-family: 'Whiteny';
+    font-weight: 400;
+
+}
+
+/* section 5 ends */
+
+
+.download_section {
+    position: relative;
+    width: 100%;
+    height: 165px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 110px;
+}
+
+
+.download_section .heading h2 {
+    font-size: 32px;
+    font-weight: 600;
+    color: #000;
+    font-family: 'Ginto Normal';
+    font-weight: 600;
+
+}
+
+.download_btn {
+    background-color: #5865f2;
+    display: flex;
+    margin-top: 35px;
+    transition: 0.2s box-shadow ease-in-out;
+    transition: 0.2s background-color ease-in-out;
+}
+.download_section .download_btn:hover{
+    box-shadow: 0 8px 15px rgb(0 0 0 / 20%); 
+    background-color: hsl(235,calc(var(--saturation-factor, 1)*86.1%),71.8%);
+}
+
+.download_btn .download_icon img {
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+}
+
+.download_btn a {
+    color: #ffff;
+    size: 20px;
+    font-family: 'Whiteny';
+    font-weight: 500;
+}
+.download_section .download_btn:hover > a{
+    text-decoration: none;
+}
+
+.background_img {
+    width: 531px;
+    height: 49px;
+    position: absolute;
+    top: -35px;
+}
+
+
+/* footer section starts */
+
+
+
+.footer_section {
+    width: 100%;
+    height: 70vh;
+    background-color: #23272a;
+    display: flex;
+    padding-top: 80px;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.footer_flex_wrapper {
+    height: 315px;
+    width: 1180px;
+    display: flex;
+    gap: 132px;
+    border-bottom: 1px solid #404eed;
+    margin-bottom: 30px;
+}
+
+.footer_flex_wrapper .first_div {
+    width: 280px;
+    height: 240px;
+    display: flex;
+    flex-direction: column;
+    gap: 21px;
+
+}
+
+.footer_flex_wrapper .first_div h4 {
+    color: #5865f2;
+    font-size: 32px;
+    line-height: 30px;
+    font-family: 'Ginto Nord';
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+.footer_flex_wrapper .first_div .contry {
+    display: flex;
+    width: 100%;
+    height: 16px;
+    gap: 10px;
+    align-items: center;
+}
+
+.footer_flex_wrapper .first_div .contry a {
+    font-size: 14px;
+    font-family: 'Whiteny';
+    font-weight: 400;
+
+}
+
+.footer_flex_wrapper .first_div .contry .arrow {
+    width: 7px;
+    height: 5px;
+}
+
+.contry img {
+    width: 24px;
+}
+
+.footer_flex_wrapper .first_div .social_icons {
+    display: flex;
+    gap: 20px;
+}
+
+.footer_flex_wrapper .second_div {
+    width: 738px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer_flex_wrapper .second_div ul {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.footer_flex_wrapper .second_div ul li a{
+    font-family: 'Whiteny';
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.footer_flex_wrapper .second_div ul span{
+    color: #404eed;
+}
+.head:hover{
+    text-decoration: none;
+}
+
+
+.logo_and_signup {
+    width: 1180px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo_and_signup .signup {
+    background-color: #5865f2;
+    font-size: 13px;
+    padding: 12px 16px;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    transition: 0.2s box-shadow ease-in-out;
+    transition: 0.2s background-color ease-in-out;
+}
+.logo_and_signup .signup:hover{
+    background-color: hsl(235,calc(var(--saturation-factor, 1)*86.1%),71.8%);
+    box-shadow: 0 8px 15px rgb(0 0 0 / 20%);
+}
+.logo_and_signup .signup a{
+    text-decoration: none;
+    font-size: 14px;
+}
+
+
+
+
+/* footer section ends */
